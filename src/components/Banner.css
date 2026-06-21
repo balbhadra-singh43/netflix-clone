@@ -1,0 +1,119 @@
+.banner {
+  color: white;
+  object-fit: contain;
+  height: 56.25vw; /* Aspect ratio like a typical movie player */
+  max-height: 80vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  margin-left: 50px;
+  max-width: 500px;
+  padding-bottom: 80px;
+  z-index: 10;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner-info-tags {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.banner-tag-year {
+  color: #46d369;
+  font-weight: bold;
+}
+
+.banner-tag-rating {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.banner-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.banner-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.banner-button:active {
+  transform: scale(0.95);
+}
+
+.play-btn {
+  background-color: white;
+  color: black;
+}
+
+.play-btn:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.info-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.info-btn:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    margin-left: 20px;
+    padding-bottom: 40px;
+    max-width: 90%;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+  }
+
+  .banner-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

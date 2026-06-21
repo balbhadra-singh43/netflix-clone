@@ -1,0 +1,192 @@
+.movie-row {
+  margin: 3vw 0;
+  padding: 0 40px;
+  position: relative;
+}
+
+.row-title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.row-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.row-posters {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 15px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide standard Firefox scrollbar */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-poster-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.row-poster-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.poster-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.2) 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.row-poster-card:hover {
+  transform: scale(1.08);
+  z-index: 10;
+}
+
+.row-poster-card:hover .poster-overlay {
+  opacity: 1;
+}
+
+.overlay-play-icon {
+  font-size: 32px;
+  color: #fff;
+  align-self: center;
+  margin-bottom: auto;
+  margin-top: 40px;
+  background: rgba(229, 9, 20, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.overlay-play-icon:hover {
+  background: #e50914;
+  transform: scale(1.1);
+}
+
+.overlay-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.overlay-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.rating-badge {
+  border: 1px solid #777;
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 10px;
+  color: #fff;
+}
+
+/* Scroll Arrows */
+.row-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 15;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  user-select: none;
+}
+
+.row-container:hover .row-arrow {
+  opacity: 1;
+}
+
+.row-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 45px;
+}
+
+.left-arrow {
+  left: -40px;
+  border-radius: 4px 0 0 4px;
+}
+
+.right-arrow {
+  right: -40px;
+  border-radius: 0 4px 4px 0;
+}
+
+@media (max-width: 768px) {
+  .movie-row {
+    padding: 0 20px;
+  }
+
+  .row-title {
+    font-size: 1.1rem;
+  }
+
+  .row-poster-card {
+    width: 130px;
+  }
+
+  .row-poster-img {
+    height: 195px;
+  }
+
+  .row-arrow {
+    display: none; /* Hide arrows on touch screens, horizontal swipe is natural */
+  }
+
+  .overlay-play-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
