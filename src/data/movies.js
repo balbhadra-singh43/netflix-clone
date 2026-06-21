@@ -1,5 +1,7 @@
 // Movie data for our Netflix clone using high quality local generated images
 // All local images are loaded under the public/images folder
+// Note: We use relative paths without a leading slash (e.g. 'images/...') so they resolve correctly 
+// on both localhost and subpath hosting environments like GitHub Pages.
 
 const movies = {
   trending: [
@@ -9,8 +11,8 @@ const movies = {
       description: "When a young boy disappears, his mother and friends must confront terrifying supernatural forces.",
       year: 2016,
       rating: "TV-14",
-      image: "/images/stranger_things.png",
-      backdrop: "/images/stranger_things_bg.png",
+      image: "images/stranger_things.png",
+      backdrop: "images/stranger_things_bg.png",
     },
     {
       id: 2,
@@ -18,8 +20,8 @@ const movies = {
       description: "Batman must accept one of the greatest tests of his ability to fight injustice.",
       year: 2008,
       rating: "PG-13",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
     {
       id: 3,
@@ -27,8 +29,8 @@ const movies = {
       description: "A thief who steals corporate secrets through dream-sharing technology.",
       year: 2010,
       rating: "PG-13",
-      image: "/images/scifi_poster.png",
-      backdrop: "/images/scifi_bg.png",
+      image: "images/scifi_poster.png",
+      backdrop: "images/scifi_bg.png",
     },
     {
       id: 4,
@@ -36,8 +38,8 @@ const movies = {
       description: "A high school chemistry teacher turned methamphetamine manufacturer.",
       year: 2008,
       rating: "TV-MA",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 5,
@@ -45,8 +47,8 @@ const movies = {
       description: "A team of explorers travel through a wormhole in space.",
       year: 2014,
       rating: "PG-13",
-      image: "/images/scifi_poster.png",
-      backdrop: "/images/scifi_bg.png",
+      image: "images/scifi_poster.png",
+      backdrop: "images/scifi_bg.png",
     },
     {
       id: 6,
@@ -54,8 +56,8 @@ const movies = {
       description: "A mutated monster-hunter struggles to find his place in a world.",
       year: 2019,
       rating: "TV-MA",
-      image: "/images/stranger_things.png",
-      backdrop: "/images/stranger_things_bg.png",
+      image: "images/stranger_things.png",
+      backdrop: "images/stranger_things_bg.png",
     },
   ],
 
@@ -66,8 +68,8 @@ const movies = {
       description: "Two imprisoned men bond over a number of years.",
       year: 1994,
       rating: "R",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
     {
       id: 8,
@@ -75,8 +77,8 @@ const movies = {
       description: "The aging patriarch of an organized crime dynasty transfers control.",
       year: 1972,
       rating: "R",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 9,
@@ -84,8 +86,8 @@ const movies = {
       description: "The lives of two mob hitmen and a boxer intertwine.",
       year: 1994,
       rating: "R",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
     {
       id: 10,
@@ -93,8 +95,8 @@ const movies = {
       description: "An insomniac office worker forms an underground fight club.",
       year: 1999,
       rating: "R",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 11,
@@ -102,8 +104,8 @@ const movies = {
       description: "The presidencies of Kennedy and Johnson through the eyes of Forrest Gump.",
       year: 1994,
       rating: "PG-13",
-      image: "/images/stranger_things.png",
-      backdrop: "/images/stranger_things_bg.png",
+      image: "images/stranger_things.png",
+      backdrop: "images/stranger_things_bg.png",
     },
     {
       id: 12,
@@ -111,8 +113,8 @@ const movies = {
       description: "A computer hacker learns about the true nature of his reality.",
       year: 1999,
       rating: "R",
-      image: "/images/scifi_poster.png",
-      backdrop: "/images/scifi_bg.png",
+      image: "images/scifi_poster.png",
+      backdrop: "images/scifi_bg.png",
     },
   ],
 
@@ -123,8 +125,8 @@ const movies = {
       description: "The Avengers assemble once more to reverse the actions of Thanos.",
       year: 2019,
       rating: "PG-13",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 14,
@@ -132,8 +134,8 @@ const movies = {
       description: "An ex-hitman comes out of retirement to track down the gangsters.",
       year: 2014,
       rating: "R",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 15,
@@ -141,8 +143,8 @@ const movies = {
       description: "In a post-apocalyptic wasteland, a woman rebels against a tyrannical ruler.",
       year: 2015,
       rating: "R",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 16,
@@ -150,8 +152,8 @@ const movies = {
       description: "A former Roman General sets out to exact vengeance.",
       year: 2000,
       rating: "R",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
     {
       id: 17,
@@ -159,8 +161,8 @@ const movies = {
       description: "An NYPD officer tries to save his wife and others taken hostage.",
       year: 1988,
       rating: "R",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 18,
@@ -168,8 +170,8 @@ const movies = {
       description: "An American agent must stop a rogue operative.",
       year: 1996,
       rating: "PG-13",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
   ],
 
@@ -180,8 +182,8 @@ const movies = {
       description: "Eight thieves take hostages in the Royal Mint of Spain.",
       year: 2017,
       rating: "TV-MA",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 20,
@@ -189,8 +191,8 @@ const movies = {
       description: "A gangster family epic set in Birmingham, England.",
       year: 2013,
       rating: "TV-MA",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
     {
       id: 21,
@@ -198,8 +200,8 @@ const movies = {
       description: "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
       year: 2015,
       rating: "TV-MA",
-      image: "/images/action_poster.png",
-      backdrop: "/images/action_bg.png",
+      image: "images/action_poster.png",
+      backdrop: "images/action_bg.png",
     },
     {
       id: 22,
@@ -207,8 +209,8 @@ const movies = {
       description: "Hundreds of cash-strapped players accept an invitation to compete in children's games.",
       year: 2021,
       rating: "TV-MA",
-      image: "/images/stranger_things.png",
-      backdrop: "/images/stranger_things_bg.png",
+      image: "images/stranger_things.png",
+      backdrop: "images/stranger_things_bg.png",
     },
     {
       id: 23,
@@ -216,8 +218,8 @@ const movies = {
       description: "Wednesday Addams investigates a murder spree while making new friends.",
       year: 2022,
       rating: "TV-14",
-      image: "/images/stranger_things.png",
-      backdrop: "/images/stranger_things_bg.png",
+      image: "images/stranger_things.png",
+      backdrop: "images/stranger_things_bg.png",
     },
     {
       id: 24,
@@ -225,8 +227,8 @@ const movies = {
       description: "A financial planner relocates his family to the Ozarks.",
       year: 2017,
       rating: "TV-MA",
-      image: "/images/dark_knight.png",
-      backdrop: "/images/dark_knight_bg.png",
+      image: "images/dark_knight.png",
+      backdrop: "images/dark_knight_bg.png",
     },
   ],
 };
